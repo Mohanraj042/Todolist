@@ -3,5 +3,6 @@ const con=require("../controller/usercontroller")
  const router=exp.Router()
 
  router.post("/register",con.register)
+ router.post("/login",con.login)
 
  module.exports=router;

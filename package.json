@@ -4,18 +4,17 @@
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "express-router": "^0.0.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.3.1"
   },
   "name": "mytodo",
   "description": "todo rep register",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon index",
-    "prod":"node index"
-
+    "dev": "nodemon index",
+    "prod": "node index"
   },
   "author": "",
   "license": "ISC"

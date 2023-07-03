@@ -19,12 +19,12 @@ const login=async(req,res)=>{
         //check user  in database
         const user= await service.checkuser(email)
         if(!user){
-            console.log("user not found");
+            throw new Error("user not found");
         }
         // compare password to user to db.password
         const ismatch=await bcrypt.compare(password,user.password)
         if(!ismatch){
-            console.log("password is miss match");
+            throw new Error("password is miss match");
         }
 
         //token rised

@@ -23,7 +23,7 @@ class todoservices{
 
     static async DeleteTodo(id){
         try{
-            let deletetodo = await todomodel.findOneAndDelete({_Id : id})
+            let deletetodo = await todomodel.findOneAndDelete({_id : id})
             return deletetodo
         }
         catch (err) {
